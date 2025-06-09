@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nomad Tours Kenya - Your local adventure partner for curated hiking, desert, beach, and cultural trips across Kenya.">
+    <title>Nomad Tours Kenya - Explore, Discover, Adventure</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        // Tailwind configuration
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#047857',
+                        'primary-light': '#059669',
+                        secondary: '#d1fae5',
+                        accent: '#f59e0b',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/WhatsApp%20Image%202025-06-09%20at%2016.15.21.jpeg" 
+                     alt="Nomad Tours Kenya Logo" 
+                     class="h-16 w-auto object-contain">
+                <span class="sr-only">Nomad Tours Kenya</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="nav-link font-medium text-emerald-700">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="tours.html" class="nav-link">Tours</a>
+                <a href="destinations.html" class="nav-link">Destinations</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="book.html" class="btn btn-primary ml-4">Book Now</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="index.html" class="py-2 text-emerald-700 font-medium">Home</a>
+                <a href="about.html" class="py-2 text-gray-600 hover:text-emerald-700">About Us</a>
+                <a href="tours.html" class="py-2 text-gray-600 hover:text-emerald-700">Tours</a>
+                <a href="destinations.html" class="py-2 text-gray-600 hover:text-emerald-700">Destinations</a>
+                <a href="gallery.html" class="py-2 text-gray-600 hover:text-emerald-700">Gallery</a>
+                <a href="contact.html" class="py-2 text-gray-600 hover:text-emerald-700">Contact</a>
+                <a href="book.html" class="btn btn-primary my-2 text-center">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero min-h-screen flex items-center justify-center text-white pt-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+                Explore, Discover, Adventure
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-light mb-8 animate-fade-in">
+                With Nomad Tours Kenya
+            </h2>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-in">
+                Nomad Tours Kenya is your local adventure partner for curated hiking, desert, beach, and cultural trips across Kenya. 
+                We connect explorers to the heart of nature and heritage.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up">
+                <a href="tours.html" class="btn btn-primary">
+                    View Upcoming Tours
+                </a>
+                <a href="book.html" class="btn btn-outline text-white border-white hover:bg-white hover:text-emerald-700">
+                    Book Your Spot
+                </a>
+            </div>
+        </div>
+        
+        <!-- WhatsApp Float Button -->
+        <a href="https://wa.me/254780019781?text=Hello%20Nomad%20Tours%20Kenya,%20I%20would%20like%20to%20inquire%20about%20your%20tours" 
+           class="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 z-40"
+           target="_blank"
+           aria-label="Chat with us on WhatsApp">
+            <i class="fab fa-whatsapp text-3xl"></i>
+        </a>
+    </header>
+
+    <!-- Featured Tours Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Upcoming Adventures</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tour Card 1 -->
+                <div class="tour-card">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Sokoke Forest Hike</h3>
+                        <p class="text-gray-600 mb-4">Explore the ancient coastal forest with our expert guides.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-emerald-600 font-bold">KSh 3,500</span>
+                            <span class="text-sm text-gray-500">Next: June 25, 2023</span>
+                        </div>
+                        <a href="book.html" class="block w-full text-center btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Tour Card 2 -->
+                <div class="tour-card">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Isiolo Desert Experience</h3>
+                        <p class="text-gray-600 mb-4">Discover the breathtaking landscapes of Isiolo's desert region.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-emerald-600 font-bold">KSh 8,500</span>
+                            <span class="text-sm text-gray-500">Next: July 2, 2023</span>
+                        </div>
+                        <a href="book.html" class="block w-full text-center btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Tour Card 3 -->
+                <div class="tour-card">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1506929562872-b5415f729582?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Watamu Marine Safari</h3>
+                        <p class="text-gray-600 mb-4">Snorkel and explore Kenya's beautiful marine life.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-emerald-600 font-bold">KSh 5,000</span>
+                            <span class="text-sm text-gray-500">Next: July 10, 2023</span>
+                        </div>
+                        <a href="book.html" class="block w-full text-center btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="tours.html" class="btn btn-outline border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white">
+                    View All Tours
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Why Choose Nomad Tours Kenya</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-2xl text-emerald-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sustainable Tourism</h3>
+                    <p class="text-gray-600">We're committed to eco-friendly practices that protect Kenya's natural beauty for future generations.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-2xl text-emerald-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Local Expertise</h3>
+                    <p class="text-gray-600">Our guides are locals with in-depth knowledge of Kenya's hidden gems and cultural heritage.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-2xl text-emerald-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Personalized Service</h3>
+                    <p class="text-gray-600">We tailor each experience to ensure you have an unforgettable adventure that matches your interests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">What Our Travelers Say</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="testimonial-slider">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide text-center">
+                        <div class="max-w-2xl mx-auto">
+                            <div class="text-yellow-400 text-4xl mb-4">"</div>
+                            <p class="text-lg text-gray-700 mb-6">
+                                The Sokoke Forest hike was absolutely incredible! Our guide was knowledgeable and made sure we had an amazing experience. Can't wait to book my next adventure with Nomad Tours Kenya!
+                            </p>
+                            <div class="font-bold text-gray-800">Sarah M.</div>
+                            <div class="text-sm text-gray-500">Nairobi, Kenya</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide text-center" style="display: none;">
+                        <div class="max-w-2xl mx-auto">
+                            <div class="text-yellow-400 text-4xl mb-4">"</div>
+                            <p class="text-lg text-gray-700 mb-6">
+                                The Isiolo Desert experience was unlike anything I've ever done. The landscapes were breathtaking, and the team took care of every detail. Highly recommend!
+                            </p>
+                            <div class="font-bold text-gray-800">James K.</div>
+                            <div class="text-sm text-gray-500">Mombasa, Kenya</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-emerald-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready for Your Next Adventure?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Join us on an unforgettable journey through Kenya's most stunning landscapes and cultural experiences.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tours.html" class="btn bg-white text-emerald-700 hover:bg-gray-100">
+                    Explore Tours
+                </a>
+                <a href="contact.html" class="btn border-2 border-white text-white hover:bg-white hover:text-emerald-700">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Nomad Tours Kenya</h3>
+                    <p class="text-gray-400">Your local adventure partner for curated hiking, desert, beach, and cultural trips across Kenya.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="tours.html" class="text-gray-400 hover:text-white">Tours</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white">Destinations</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2 text-emerald-400"></i>
+                            <a href="tel:+254780019781" class="hover:text-white">+254 780 019 781</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2 text-emerald-400"></i>
+                            <a href="mailto:info@nomadtourskenya.com" class="hover:text-white">info@nomadtourskenya.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-emerald-400"></i>
+                            <span>Nairobi, Kenya</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-tiktok text-xl"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <a href="https://wa.me/254780019781" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">
+                            <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Nomad Tours Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

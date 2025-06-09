@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Nomad Tours Kenya</title>
+    <meta name="description" content="Read what our clients say about their experiences with Nomad Tours Kenya. Real stories from travelers who have explored Kenya with us.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/WhatsApp%20Image%202025-06-09%20at%2016.15.21.jpeg" 
+                     alt="Nomad Tours Kenya Logo" 
+                     class="h-16 w-auto object-contain">
+                <span class="sr-only">Nomad Tours Kenya</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="tours.html" class="nav-link">Tours</a>
+                <a href="destinations.html" class="nav-link">Destinations</a>
+                <a href="testimonials.html" class="nav-link font-medium text-emerald-700">Testimonials</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="book.html" class="btn btn-primary ml-4">Book Now</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="index.html" class="py-2 text-gray-600 hover:text-emerald-700">Home</a>
+                <a href="about.html" class="py-2 text-gray-600 hover:text-emerald-700">About Us</a>
+                <a href="tours.html" class="py-2 text-gray-600 hover:text-emerald-700">Tours</a>
+                <a href="destinations.html" class="py-2 text-gray-600 hover:text-emerald-700">Destinations</a>
+                <a href="testimonials.html" class="py-2 text-emerald-700 font-medium">Testimonials</a>
+                <a href="gallery.html" class="py-2 text-gray-600 hover:text-emerald-700">Gallery</a>
+                <a href="contact.html" class="py-2 text-gray-600 hover:text-emerald-700">Contact</a>
+                <a href="book.html" class="btn btn-primary my-2 text-center">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="pt-32 pb-16 bg-cover bg-center bg-fixed" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Traveler Testimonials</h1>
+            <p class="text-xl">Hear what our guests have to say about their Kenyan adventures with us</p>
+        </div>
+    </header>
+
+    <!-- Featured Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-3">Featured Stories</h2>
+                <div class="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Read about the unforgettable experiences of our travelers from around the world.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Video Testimonial 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative pt-[56.25%] bg-black">
+                        <img src="https://images.unsplash.com/photo-1503220313835-c38b160f06f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Testimonial Thumbnail" 
+                             class="absolute inset-0 w-full h-full object-cover opacity-70">
+                        <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white/80 rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                            <i class="fas fa-play text-emerald-600 text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" 
+                                 alt="Sarah Johnson" 
+                                 class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Sarah Johnson</h4>
+                                <p class="text-sm text-gray-500">From USA • Maasai Mara Safari</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Seeing the Great Migration was a dream come true. The guides were incredibly knowledgeable and made sure we had the best views. Can't wait to come back!"</p>
+                    </div>
+                </div>
+
+                <!-- Video Testimonial 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative pt-[56.25%] bg-black">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" 
+                             alt="Testimonial Thumbnail" 
+                             class="absolute inset-0 w-full h-full object-cover opacity-70">
+                        <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white/80 rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                            <i class="fas fa-play text-emerald-600 text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+                                 alt="Michael Chen" 
+                                 class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Michael Chen</h4>
+                                <p class="text-sm text-gray-500">From Canada • Mount Kenya Trek</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"The Mount Kenya trek was challenging but absolutely worth it. The guides were professional and supportive throughout the journey. The views from Point Lenana were breathtaking!"</p>
+                    </div>
+                </div>
+
+                <!-- Video Testimonial 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative pt-[56.25%] bg-black">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Testimonial Thumbnail" 
+                             class="absolute inset-0 w-full h-full object-cover opacity-70">
+                        <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white/80 rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                            <i class="fas fa-play text-emerald-600 text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" 
+                                 alt="Elena Rodriguez" 
+                                 class="w-12 h-12 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Elena Rodriguez</h4>
+                                <p class="text-sm text-gray-500">From Spain • Diani Beach Retreat</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Paradise found! The beach resort was stunning, and the staff went above and beyond to make our stay special. The sunset dhow cruise was the highlight of our trip!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Written Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-3">What Our Travelers Say</h2>
+                <div class="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Read more stories from our amazing community of travelers.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/54.jpg" 
+                             alt="David Kim" 
+                             class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-emerald-100">
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800">David Kim</h4>
+                            <p class="text-sm text-gray-500">Samburu Adventure • March 2023</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The Samburu experience was incredible. We saw so many unique species we wouldn't have seen elsewhere in Kenya. The guides were extremely knowledgeable about the local wildlife and culture."</p>
+                    <div class="flex space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded">Wildlife</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Cultural</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/28.jpg" 
+                             alt="Sophie Martin" 
+                             class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-emerald-100">
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800">Sophie Martin</h4>
+                            <p class="text-sm text-gray-500">Hot Air Balloon Safari • January 2023</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The hot air balloon ride at sunrise over the Maasai Mara was absolutely magical. It was worth every penny. The champagne breakfast in the bush afterward was the perfect ending to an unforgettable experience."</p>
+                    <div class="flex space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded">Sunrise</span>
+                        <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Luxury</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/76.jpg" 
+                             alt="James Wilson" 
+                             class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-emerald-100">
+                        <div>
+                            <h4 class="font-semibold text-lg text-gray-800">James Wilson</h4>
+                            <p class="text-sm text-gray-500">Family Safari • December 2022</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Traveling with kids can be challenging, but Nomad Tours made it so easy. They accommodated all our needs and made sure our children had an educational and fun experience. The guides were fantastic with kids!"</p>
+                    <div class="flex space-x-2">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded">Family</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Kids</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Testimonials Button -->
+            <div class="text-center mt-12">
+                <button id="load-more-testimonials" class="btn btn-outline px-8 py-3">
+                    <i class="fas fa-comment-dots mr-2"></i> Load More Testimonials
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-emerald-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready for Your Kenyan Adventure?</h2>
+            <p class="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">Join hundreds of satisfied travelers who have experienced the magic of Kenya with us.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tours.html" class="btn btn-white">Explore Tours</a>
+                <a href="contact.html" class="btn btn-outline-white">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Nomad Tours Kenya</h3>
+                    <p class="text-gray-400">Your local adventure partner for curated hiking, desert, beach, and cultural trips across Kenya.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="tours.html" class="text-gray-400 hover:text-white">Tours</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white">Destinations</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2 text-emerald-400"></i>
+                            <a href="tel:+254780019781" class="hover:text-white">+254 780 019 781</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2 text-emerald-400"></i>
+                            <a href="mailto:info@nomadtourskenya.com" class="hover:text-white">info@nomadtourskenya.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-emerald-400"></i>
+                            <span>Nairobi, Kenya</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <h5 class="font-semibold mb-2">Newsletter</h5>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-md w-full text-gray-800 focus:outline-none">
+                            <button class="bg-emerald-600 hover:bg-emerald-700 px-4 rounded-r-md">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Nomad Tours Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254780019781" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition-colors z-40">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-24 right-6 bg-emerald-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-lg hover:bg-emerald-700 transition-all duration-300 transform hover:scale-110 z-40 hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Load more testimonials
+        const loadMoreBtn = document.getElementById('load-more-testimonials');
+        const testimonialsContainer = document.querySelector('.grid.md\:grid-cols-3');
+        
+        // Sample additional testimonials that would be loaded
+        const additionalTestimonials = [
+            {
+                name: "Amina Hassan",
+                avatar: "https://randomuser.me/api/portraits/women/12.jpg",
+                tour: "Luxury Beach Holiday",
+                date: "November 2022",
+                rating: 5,
+                content: "The beach resort was absolutely stunning, and the service was impeccable. The private beach was perfect for relaxing, and the seafood was to die for!",
+                tags: ["Beach", "Luxury"]
+            },
+            {
+                name: "Thomas Müller",
+                avatar: "https://randomuser.me/api/portraits/men/45.jpg",
+                tour: "Photography Safari",
+                date: "September 2022",
+                rating: 4,
+                content: "As a wildlife photographer, I was impressed by the knowledge of our guide who knew exactly where to find the best photo opportunities. Got some of my best shots ever!",
+                tags: ["Wildlife", "Photography"]
+            },
+            {
+                name: "Yuki Tanaka",
+                avatar: "https://randomuser.me/api/portraits/women/33.jpg",
+                tour: "Cultural Experience",
+                date: "July 2022",
+                rating: 5,
+                content: "The cultural immersion was incredible. We visited local villages, learned traditional dances, and even cooked with local families. Truly an authentic experience.",
+                tags: ["Cultural", "Local"]
+            }
+        ];
+
+        if (loadMoreBtn) {
+            loadMoreBtn.addEventListener('click', () => {
+                // Add loading state
+                loadMoreBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Loading...';
+                loadMoreBtn.disabled = true;
+
+                // Simulate API call delay
+                setTimeout(() => {
+                    // Add new testimonials
+                    additionalTestimonials.forEach(testimonial => {
+                        const testimonialEl = document.createElement('div');
+                        testimonialEl.className = 'bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300';
+                        
+                        let stars = '';
+                        for (let i = 0; i < 5; i++) {
+                            if (i < testimonial.rating) {
+                                stars += '<i class="fas fa-star"></i>';
+                            } else {
+                                stars += '<i class="far fa-star"></i>';
+                            }
+                        }
+                        
+                        let tags = '';
+                        testimonial.tags.forEach(tag => {
+                            const colors = ['emerald', 'blue', 'purple', 'yellow', 'red', 'indigo'];
+                            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                            tags += `<span class="bg-${randomColor}-100 text-${randomColor}-800 text-xs px-2 py-1 rounded">${tag}</span> `;
+                        });
+                        
+                        testimonialEl.innerHTML = `
+                            <div class="flex items-center mb-6">
+                                <img src="${testimonial.avatar}" 
+                                     alt="${testimonial.name}" 
+                                     class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-emerald-100">
+                                <div>
+                                    <h4 class="font-semibold text-lg text-gray-800">${testimonial.name}</h4>
+                                    <p class="text-sm text-gray-500">${testimonial.tour} • ${testimonial.date}</p>
+                                </div>
+                            </div>
+                            <div class="flex text-yellow-400 mb-4">
+                                ${stars}
+                            </div>
+                            <p class="text-gray-600 mb-4">"${testimonial.content}"</p>
+                            <div class="flex space-x-2">
+                                ${tags}
+                            </div>
+                        `;
+                        
+                        testimonialsContainer.appendChild(testimonialEl);
+                    });
+                    
+                    // Hide load more button after loading
+                    loadMoreBtn.style.display = 'none';
+                    
+                    // Show message
+                    const loadedMessage = document.createElement('p');
+                    loadedMessage.className = 'text-gray-500 text-sm mt-4 col-span-full text-center';
+                    loadedMessage.textContent = 'All testimonials loaded';
+                    loadMoreBtn.parentNode.appendChild(loadedMessage);
+                    
+                }, 1000); // Simulate network delay
+            });
+        }
+
+        // Video modal functionality
+        const videoButtons = document.querySelectorAll('.relative.pt-\[56\.25%\] button');
+        videoButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // In a real implementation, this would open a modal with the video
+                alert('Video player would open here in the full implementation');
+            });
+        });
+    </script>
+</body>
+</html>

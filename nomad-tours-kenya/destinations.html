@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Nomad Tours Kenya</title>
+    <meta name="description" content="Explore the most breathtaking destinations in Kenya with Nomad Tours. From wildlife safaris to pristine beaches, discover the best of Kenya's natural wonders.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/WhatsApp%20Image%202025-06-09%20at%2016.15.21.jpeg" 
+                     alt="Nomad Tours Kenya Logo" 
+                     class="h-16 w-auto object-contain">
+                <span class="sr-only">Nomad Tours Kenya</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="tours.html" class="nav-link">Tours</a>
+                <a href="destinations.html" class="nav-link font-medium text-emerald-700">Destinations</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="book.html" class="btn btn-primary ml-4">Book Now</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="index.html" class="py-2 text-gray-600 hover:text-emerald-700">Home</a>
+                <a href="about.html" class="py-2 text-gray-600 hover:text-emerald-700">About Us</a>
+                <a href="tours.html" class="py-2 text-gray-600 hover:text-emerald-700">Tours</a>
+                <a href="destinations.html" class="py-2 text-emerald-700 font-medium">Destinations</a>
+                <a href="gallery.html" class="py-2 text-gray-600 hover:text-emerald-700">Gallery</a>
+                <a href="contact.html" class="py-2 text-gray-600 hover:text-emerald-700">Contact</a>
+                <a href="book.html" class="btn btn-primary my-2 text-center">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="pt-32 pb-16 bg-cover bg-center bg-fixed" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1585409676935-0c2f7b5a0f8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Discover Kenya</h1>
+            <p class="text-xl">Explore our handpicked selection of Kenya's most breathtaking destinations</p>
+        </div>
+    </header>
+
+    <!-- Featured Destinations -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-3">Featured Destinations</h2>
+                <div class="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our curated selection of Kenya's most iconic destinations that promise unforgettable experiences.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Destination 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Maasai Mara National Reserve" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-2xl font-bold mb-2">Maasai Mara</h3>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span>Narok County</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Witness the Great Migration and spot the Big Five in Kenya's most famous wildlife reserve.</p>
+                        <a href="#" class="text-emerald-600 font-medium hover:text-emerald-700 inline-flex items-center">
+                            Explore More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Diani Beach" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-2xl font-bold mb-2">Diani Beach</h3>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span>Kwale County</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Relax on pristine white sands and enjoy the crystal-clear waters of the Indian Ocean.</p>
+                        <a href="#" class="text-emerald-600 font-medium hover:text-emerald-700 inline-flex items-center">
+                            Explore More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1589555239740-37b89d74b726?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Mount Kenya" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-2xl font-bold mb-2">Mount Kenya</h3>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span>Central Kenya</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Challenge yourself with a trek to Africa's second-highest peak and its stunning landscapes.</p>
+                        <a href="#" class="text-emerald-600 font-medium hover:text-emerald-700 inline-flex items-center">
+                            Explore More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Destinations -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-3">Explore All Destinations</h2>
+                <div class="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover the diverse landscapes and rich wildlife that make Kenya a top travel destination.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button class="px-4 py-2 bg-emerald-600 text-white rounded-full font-medium">All</button>
+                <button class="px-4 py-2 bg-white text-gray-700 border border-gray-300 rounded-full font-medium hover:bg-gray-50">Wildlife</button>
+                <button class="px-4 py-2 bg-white text-gray-700 border border-gray-300 rounded-full font-medium hover:bg-gray-50">Beaches</button>
+                <button class="px-4 py-2 bg-white text-gray-700 border border-gray-300 rounded-full font-medium hover:bg-gray-50">Mountains</button>
+                <button class="px-4 py-2 bg-white text-gray-700 border border-gray-300 rounded-full font-medium hover:bg-gray-50">Lakes</button>
+                <button class="px-4 py-2 bg-white text-gray-700 border border-gray-300 rounded-full font-medium hover:bg-gray-50">Cultural</button>
+            </div>
+
+            <!-- Destinations Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Destination Card 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573843985054-831e217a3a09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Amboseli National Park" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-3 right-3 bg-emerald-600 text-white text-xs font-bold px-2 py-1 rounded">Wildlife</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Amboseli National Park</h3>
+                        <p class="text-gray-600 mb-4">Famous for its large elephant herds and views of Mount Kilimanjaro across the border in Tanzania.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Kajiado County</span>
+                        </div>
+                        <a href="#" class="text-emerald-600 font-medium hover:text-emerald-700 inline-flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination Card 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581431637074-0fff8d1f4a9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Lamu Island" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-3 right-3 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded">Beach</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Lamu Island</h3>
+                        <p class="text-gray-600 mb-4">A UNESCO World Heritage site with a rich Swahili culture, beautiful beaches, and historic architecture.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Lamu County</span>
+                        </div>
+                        <a href="#" class="text-emerald-600 font-medium hover:text-emerald-700 inline-flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination Card 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1585409676935-0c2f7b5a0f8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Lake Nakuru" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-3 right-3 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">Lakes</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Lake Nakuru</h3>
+                        <p class="text-gray-600 mb-4">Famous for its flamingos, white rhinos, and diverse birdlife in the Great Rift Valley.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Nakuru County</span>
+                        </div>
+                        <a href="#" class="text-emerald-600 font-medium hover:text-emerald-700 inline-flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination Card 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1589555239740-37b89d74b726?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Samburu National Reserve" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-3 right-3 bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded">Cultural</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Samburu National Reserve</h3>
+                        <p class="text-gray-600 mb-4">Home to unique wildlife species and the colorful Samburu people with their rich cultural heritage.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Samburu County</span>
+                        </div>
+                        <a href="#" class="text-emerald-600 font-medium hover:text-emerald-700 inline-flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination Card 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1585409676935-0c2f7b5a0f8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Tsavo National Park" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-3 right-3 bg-emerald-600 text-white text-xs font-bold px-2 py-1 rounded">Wildlife</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Tsavo National Park</h3>
+                        <p class="text-gray-600 mb-4">One of the world's largest game reserves, known for its red elephants and diverse landscapes.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Taita-Taveta/Kwale County</span>
+                        </div>
+                        <a href="#" class="text-emerald-600 font-medium hover:text-emerald-700 inline-flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destination Card 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1585409676935-0c2f7b5a0f8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Hell's Gate National Park" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute top-3 right-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">Adventure</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Hell's Gate National Park</h3>
+                        <p class="text-gray-600 mb-4">Perfect for hiking, cycling, and rock climbing with stunning gorges and geothermal activity.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Nakuru County</span>
+                        </div>
+                        <a href="#" class="text-emerald-600 font-medium hover:text-emerald-700 inline-flex items-center">
+                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center mt-12">
+                <nav class="flex items-center space-x-2">
+                    <a href="#" class="px-4 py-2 border border-gray-300 rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        <span class="sr-only">Previous</span>
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#" class="px-4 py-2 border border-emerald-600 bg-emerald-600 text-white rounded-md font-medium">1</a>
+                    <a href="#" class="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50">2</a>
+                    <a href="#" class="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50">3</a>
+                    <span class="px-4 py-2 text-gray-500">...</span>
+                    <a href="#" class="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50">8</a>
+                    <a href="#" class="px-4 py-2 border border-gray-300 rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        <span class="sr-only">Next</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-emerald-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Explore Kenya?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Let us help you plan the perfect Kenyan adventure. Contact us today to start your journey.</p>
+            <a href="contact.html" class="bg-white text-emerald-700 hover:bg-gray-100 font-medium py-3 px-8 rounded-md transition duration-300 inline-block">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Nomad Tours Kenya</h3>
+                    <p class="text-gray-400 mb-4">Creating unforgettable travel experiences in Kenya's most beautiful destinations.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="tours.html" class="text-gray-400 hover:text-white">Tours</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white">Destinations</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>123 Safari Lane, Nairobi, Kenya</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3"></i>
+                            <span>+254 700 000000</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>info@nomadtourskenya.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates and offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 px-4 rounded-r-md">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Nomad Tours Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/254700000000?text=Hello%20Nomad%20Tours%20Kenya,%20I%20would%20like%20more%20information%20about%20your%20destinations" 
+       target="_blank" 
+       class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition-all duration-300">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-24 right-6 bg-gray-800 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

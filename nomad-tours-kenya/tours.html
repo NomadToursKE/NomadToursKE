@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Tours - Nomad Tours Kenya</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/WhatsApp%20Image%202025-06-09%20at%2016.15.21.jpeg" 
+                     alt="Nomad Tours Kenya Logo" 
+                     class="h-16 w-auto object-contain">
+                <span class="sr-only">Nomad Tours Kenya</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="tours.html" class="nav-link font-medium text-emerald-700">Tours</a>
+                <a href="destinations.html" class="nav-link">Destinations</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="book.html" class="btn btn-primary ml-4">Book Now</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="index.html" class="py-2 text-gray-600 hover:text-emerald-700">Home</a>
+                <a href="about.html" class="py-2 text-gray-600 hover:text-emerald-700">About Us</a>
+                <a href="tours.html" class="py-2 text-emerald-700 font-medium">Tours</a>
+                <a href="destinations.html" class="py-2 text-gray-600 hover:text-emerald-700">Destinations</a>
+                <a href="gallery.html" class="py-2 text-gray-600 hover:text-emerald-700">Gallery</a>
+                <a href="contact.html" class="py-2 text-gray-600 hover:text-emerald-700">Contact</a>
+                <a href="book.html" class="btn btn-primary my-2 text-center">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="pt-32 pb-16 bg-cover bg-center bg-fixed" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Upcoming Tours</h1>
+            <p class="text-xl">Find your next adventure in Kenya</p>
+        </div>
+    </header>
+
+    <!-- Tours Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Adventure Tours</h2>
+                <div class="w-20 h-1 bg-emerald-600 mx-auto"></div>
+            </div>
+            
+            <!-- Tour Filters -->
+            <div class="mb-12 bg-white p-6 rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
+                    <div class="w-full md:w-1/3">
+                        <label for="destination-filter" class="block text-sm font-medium text-gray-700 mb-1">Destination</label>
+                        <select id="destination-filter" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                            <option value="all">All Destinations</option>
+                            <option value="masai-mara">Maasai Mara</option>
+                            <option value="amboseli">Amboseli</option>
+                            <option value="tsavo">Tsavo</option>
+                            <option value="samburu">Samburu</option>
+                            <option value="nakuru">Lake Nakuru</option>
+                            <option value="naivasha">Lake Naivasha</option>
+                            <option value="diani">Diani Beach</option>
+                        </select>
+                    </div>
+                    <div class="w-full md:w-1/4">
+                        <label for="duration-filter" class="block text-sm font-medium text-gray-700 mb-1">Duration</label>
+                        <select id="duration-filter" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                            <option value="all">Any Duration</option>
+                            <option value="1-3">1-3 Days</option>
+                            <option value="4-6">4-6 Days</option>
+                            <option value="7-9">7-9 Days</option>
+                            <option value="10+">10+ Days</option>
+                        </select>
+                    </div>
+                    <div class="w-full md:w-1/4">
+                        <label for="price-filter" class="block text-sm font-medium text-gray-700 mb-1">Price Range</label>
+                        <select id="price-filter" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                            <option value="all">Any Price</option>
+                            <option value="0-500">Under $500</option>
+                            <option value="500-1000">$500 - $1000</option>
+                            <option value="1000-2000">$1000 - $2000</option>
+                            <option value="2000+">$2000+</option>
+                        </select>
+                    </div>
+                    <div class="flex items-end">
+                        <button id="reset-filters" class="btn btn-outline w-full md:w-auto">
+                            <i class="fas fa-sync-alt mr-2"></i> Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour Cards Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="tours-container">
+                <!-- Tour Card 1 -->
+                <div class="tour-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-destination="masai-mara" data-duration="4" data-price="1200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Maasai Mara Safari" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute top-2 right-2 bg-emerald-600 text-white text-xs font-bold px-2 py-1 rounded">Popular</div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-xl font-bold text-white">Maasai Mara Safari</h3>
+                            <p class="text-emerald-200 text-sm">4 Days / 3 Nights</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-yellow-400 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="text-gray-600 text-sm ml-2">4.7 (128 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Experience the Great Migration in this 4-day luxury safari adventure through the Maasai Mara National Reserve.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded">Wildlife</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Luxury Camping</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Hot Air Balloon</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-emerald-600">$1,200</span>
+                                <span class="text-gray-500 text-sm block">per person</span>
+                            </div>
+                            <a href="book.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 2 -->
+                <div class="tour-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-destination="amboseli" data-duration="3" data-price="850">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1585409676935-0c2f7b5a0f8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Amboseli National Park" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-xl font-bold text-white">Amboseli Adventure</h3>
+                            <p class="text-emerald-200 text-sm">3 Days / 2 Nights</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-yellow-400 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="text-gray-600 text-sm ml-2">4.2 (94 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Witness the majestic Mount Kilimanjaro as a backdrop to your wildlife viewing in Amboseli National Park.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded">Elephants</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Kilimanjaro Views</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Cultural Experience</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-emerald-600">$850</span>
+                                <span class="text-gray-500 text-sm block">per person</span>
+                            </div>
+                            <a href="book.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 3 -->
+                <div class="tour-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-destination="diani" data-duration="5" data-price="1500">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1581431637074-0fff8d1f4a9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Diani Beach Retreat" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-xl font-bold text-white">Diani Beach Escape</h3>
+                            <p class="text-emerald-200 text-sm">5 Days / 4 Nights</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-yellow-400 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="text-gray-600 text-sm ml-2">4.9 (156 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Relax on the pristine white sands of Diani Beach with this 5-day beach getaway, including water sports and sunset dhow cruises.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded">Beach</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Water Sports</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Luxury Resort</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-emerald-600">$1,500</span>
+                                <span class="text-gray-500 text-sm block">per person</span>
+                            </div>
+                            <a href="book.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 4 -->
+                <div class="tour-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-destination="mount-kenya" data-duration="5" data-price="1300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" 
+                             alt="Mount Kenya Trek" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">Limited Spots</div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-xl font-bold text-white">Mount Kenya Trek</h3>
+                            <p class="text-emerald-200 text-sm">5 Days / 4 Nights</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-yellow-400 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="text-gray-600 text-sm ml-2">4.6 (112 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Conquer the second-highest peak in Africa on this 5-day trekking adventure through diverse landscapes and stunning alpine scenery.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded">Trekking</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Mountain Huts</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Challenging</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-emerald-600">$1,300</span>
+                                <span class="text-gray-500 text-sm block">per person</span>
+                            </div>
+                            <a href="book.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 5 -->
+                <div class="tour-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-destination="samburu" data-duration="4" data-price="1100">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1533134242443-c44f79790dd5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Samburu Special" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-xl font-bold text-white">Samburu Special</h3>
+                            <p class="text-emerald-200 text-sm">4 Days / 3 Nights</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-yellow-400 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="text-gray-600 text-sm ml-2">4.3 (87 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Discover the unique wildlife of Samburu National Reserve, home to species not found in other parts of Kenya.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded">Rare Species</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Cultural Village</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Game Drives</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-emerald-600">$1,100</span>
+                                <span class="text-gray-500 text-sm block">per person</span>
+                            </div>
+                            <a href="book.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 6 -->
+                <div class="tour-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-destination="tsavo" data-duration="6" data-price="1750">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1585409676935-0c2f7b5a0f8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Tsavo Explorer" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-xl font-bold text-white">Tsavo Explorer</h3>
+                            <p class="text-emerald-200 text-sm">6 Days / 5 Nights</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-yellow-400 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="text-gray-600 text-sm ml-2">4.8 (134 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Explore the vast landscapes of Tsavo East and West National Parks, home to the famous 'red elephants' and Mzima Springs.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded">Wildlife</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Scenic Landscapes</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Luxury Lodges</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-emerald-600">$1,750</span>
+                                <span class="text-gray-500 text-sm block">per person</span>
+                            </div>
+                            <a href="book.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="load-more" class="btn btn-outline px-8 py-3">
+                    <i class="fas fa-sync-alt mr-2"></i> Load More Tours
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Nomad Tours Kenya</h3>
+                    <p class="text-gray-400">Your local adventure partner for curated hiking, desert, beach, and cultural trips across Kenya.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="tours.html" class="text-gray-400 hover:text-white">Tours</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white">Destinations</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2 text-emerald-400"></i>
+                            <a href="tel:+254780019781" class="hover:text-white">+254 780 019 781</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2 text-emerald-400"></i>
+                            <a href="mailto:info@nomadtourskenya.com" class="hover:text-white">info@nomadtourskenya.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-emerald-400"></i>
+                            <span>Nairobi, Kenya</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <a href="https://wa.me/254780019781" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">
+                            <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Nomad Tours Kenya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Back to top button
+            const backToTopButton = document.createElement('button');
+            backToTopButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
+            backToTopButton.className = 'fixed bottom-6 right-6 bg-emerald-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center text-xl hover:bg-emerald-700 transition-all duration-300 transform hover:scale-110';
+            backToTopButton.style.display = 'none';
+            document.body.appendChild(backToTopButton);
+
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.style.display = 'flex';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            });
+
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+
+            // Tour filtering functionality
+            const tourCards = document.querySelectorAll('.tour-card');
+            const destinationFilter = document.getElementById('destination-filter');
+            const durationFilter = document.getElementById('duration-filter');
+            const priceFilter = document.getElementById('price-filter');
+            const resetFiltersBtn = document.getElementById('reset-filters');
+            const loadMoreBtn = document.getElementById('load-more');
+            const toursContainer = document.getElementById('tours-container');
+            let visibleTours = 6; // Number of initially visible tours
+            const toursPerLoad = 3; // Number of tours to load each time
+
+            // Show initial set of tours
+            updateVisibleTours();
+
+            // Add event listeners to filters
+            [destinationFilter, durationFilter, priceFilter].forEach(filter => {
+                filter.addEventListener('change', filterTours);
+            });
+
+            // Reset filters
+            resetFiltersBtn.addEventListener('click', () => {
+                destinationFilter.value = 'all';
+                durationFilter.value = 'all';
+                priceFilter.value = 'all';
+                filterTours();
+            });
+
+
+            // Load more tours
+            loadMoreBtn.addEventListener('click', () => {
+                visibleTours += toursPerLoad;
+                updateVisibleTours();
+                
+                // Hide load more button if all tours are visible
+                if (visibleTours >= tourCards.length) {
+                    loadMoreBtn.style.display = 'none';
+                }
+            });
+
+            // Filter tours based on selected filters
+            function filterTours() {
+                const selectedDestination = destinationFilter.value;
+                const selectedDuration = durationFilter.value;
+                const selectedPrice = priceFilter.value;
+                
+                tourCards.forEach(card => {
+                    const destination = card.getAttribute('data-destination');
+                    const duration = parseInt(card.getAttribute('data-duration'));
+                    const price = parseInt(card.getAttribute('data-price'));
+                    
+                    const matchesDestination = selectedDestination === 'all' || destination === selectedDestination;
+                    
+                    let matchesDuration = true;
+                    if (selectedDuration !== 'all') {
+                        const [min, max] = selectedDuration.includes('+') 
+                            ? [parseInt(selectedDuration), Infinity] 
+                            : selectedDuration.split('-').map(Number);
+                        matchesDuration = duration >= min && (selectedDuration.includes('+') || duration <= max);
+                    }
+                    
+                    let matchesPrice = true;
+                    if (selectedPrice !== 'all') {
+                        const [min, max] = selectedPrice.includes('+') 
+                            ? [parseInt(selectedPrice), Infinity] 
+                            : selectedPrice.split('-').map(Number);
+                        matchesPrice = price >= min && (selectedPrice.includes('+') || price <= max);
+                    }
+                    
+                    if (matchesDestination && matchesDuration && matchesPrice) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Reset visible tours count and show load more button
+                visibleTours = 6;
+                updateVisibleTours();
+                loadMoreBtn.style.display = 'inline-flex';
+            }
+
+            // Update visible tours based on current count
+            function updateVisibleTours() {
+                let visibleCount = 0;
+                tourCards.forEach((card, index) => {
+                    if (card.style.display !== 'none' && visibleCount < visibleTours) {
+                        card.style.display = 'block';
+                        visibleCount++;
+                    } else if (card.style.display !== 'none') {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Hide load more button if all tours are visible or no tours match filters
+                const visibleCards = Array.from(tourCards).filter(card => card.style.display !== 'none');
+                if (visibleCards.length <= visibleTours) {
+                    loadMoreBtn.style.display = 'none';
+                } else {
+                    loadMoreBtn.style.display = 'inline-flex';
+                }
+                
+                // Show message if no tours match filters
+                if (visibleCards.length === 0) {
+                    const noResults = document.createElement('div');
+                    noResults.className = 'col-span-full text-center py-12';
+                    noResults.innerHTML = `
+                        <i class="fas fa-search text-5xl text-gray-300 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-700">No tours found</h3>
+                        <p class="text-gray-500 mt-2">Try adjusting your filters to find what you're looking for.</p>
+                        <button id="reset-filters-2" class="btn btn-outline mt-4">
+                            <i class="fas fa-sync-alt mr-2"></i> Reset Filters
+                        </button>
+                    `;
+                    
+                    // Check if no-results already exists
+                    const existingNoResults = document.getElementById('no-results');
+                    if (!existingNoResults) {
+                        noResults.id = 'no-results';
+                        toursContainer.parentNode.insertBefore(noResults, loadMoreBtn.parentNode);
+                        
+                        // Add event listener to the new reset button
+                        document.getElementById('reset-filters-2').addEventListener('click', () => {
+                            destinationFilter.value = 'all';
+                            durationFilter.value = 'all';
+                            priceFilter.value = 'all';
+                            filterTours();
+                            noResults.remove();
+                        });
+                    }
+                } else {
+                    const noResults = document.getElementById('no-results');
+                    if (noResults) noResults.remove();
+                }
+            }
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
